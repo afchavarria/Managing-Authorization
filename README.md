@@ -1,11 +1,12 @@
 # Managing Authorization
 
-## Projext Description
+## Project description
 
 As part of the research team at my organization, I was tasked with updating the authorizations and permissions of the workers within the projects directory. While investigating, I observed that the permissions did not reflect the level of authorizations given. To update authorizations, I did as follows:
 
-## Checking File and Directory Details
+## Checking file and directory details
 <img width="1867" alt="Image" src="https://github.com/user-attachments/assets/a8f03094-7d7d-4714-89f6-e3eecef64503" />
+
 The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory. 
 
 ## Describing the permissions string
@@ -27,8 +28,7 @@ The first two lines of the screenshot display the commands I entered, and the ot
 The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
 
 The following code demonstrates how I used Linux commands to change the permissions:
-
-
+<img width="1870" alt="Image" src="https://github.com/user-attachments/assets/4bc17a38-af87-4bab-81f4-ff82ba653c20" />
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
 
@@ -36,8 +36,7 @@ The first two lines of the screenshot display the commands I entered, and the ot
 My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions.
 
 The following code demonstrates how I used Linux commands to change the permissions:
-
-
+<img width="1864" alt="Image" src="https://github.com/user-attachments/assets/afca20c6-3ec9-4574-8e71-ef7ae675e6b3" />
 
 The output here displays the permission listing for several files and directories. Line 1 indicates the current directory (projects), and line 2 indicates the parent directory (home). Line 3 indicates a regular file titled .project_x.txt. Line 4 is the directory (drafts) with restricted permissions. Here you can see that only researcher2 has execute permissions.  It was previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
 
