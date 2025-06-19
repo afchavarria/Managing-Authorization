@@ -1,4 +1,4 @@
-# Managing Authorization
+# File permissions in Linux
 
 ## Project description
 
