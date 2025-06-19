@@ -19,8 +19,7 @@ The 10-character string can be deconstructed to determine who is authorized to a
 The organization determined that other shouldn't have write access to any of their files. To comply with this, I referred to the file permissions that I previously returned. I determined project_k.txt must have the write access removed for other.
 
 The following code demonstrates how I used Linux commands to do this:
-
-
+<img width="1866" alt="Image" src="https://github.com/user-attachments/assets/6504e2f8-d2ce-4b3e-bdf8-12992e4fc28b" />
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made.
 
