@@ -28,7 +28,7 @@ The first two lines of the screenshot display the commands I entered, and the ot
 The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
 
 The following code demonstrates how I used Linux commands to change the permissions:
-<img width="1870" alt="Image" src="https://github.com/user-attachments/assets/4bc17a38-af87-4bab-81f4-ff82ba653c20" />
+<img width="1866" alt="Image" src="https://github.com/user-attachments/assets/bbae6fff-5a8a-4432-9a00-2125c3199012" />
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
 
