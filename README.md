@@ -3,7 +3,7 @@
 ## Projext Description
 
 As part of the research team at my organization, I was tasked with updating the authorizations and permissions of the workers within the projects directory. While investigating, I observed that the permissions did not reflect the level of authorizations given. To update authorizations, I did as follows:
-
+<img width="939" alt="Image" src="https://github.com/user-attachments/assets/bce5516c-c8b5-49bb-ad34-f10b3eac76a9" />
 ### Checking File and Directory Details
 
 I first checked the existing permissions from a specific directory in the file system using a Linux command ( ls -la). This command displays permissions to files and directories, including hidden files. The following  showed:
